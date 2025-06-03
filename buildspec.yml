@@ -5,12 +5,11 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - npm install
+      - npm install 
 
-    build:
+  build:
     commands:
       - npm test
-      - cat coverage/lcov.info || echo "❌ lcov.info NO ENCONTRADO"
 
 reports:
   cobertura:
