@@ -20,10 +20,5 @@ reports:
 artifacts:
   files:
     - coverage/lcov.info
-    - coverage/coverage-final.json
     - coverage/lcov-report/index.html
-build:
-  commands:
-    - npm test
-    - echo "Contenido del archivo lcov.info:"
-    - cat coverage/lcov.info || echo "❌ No se generó coverage/lcov.info"
+    - coverage/coverage-final.json
