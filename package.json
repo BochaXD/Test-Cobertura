@@ -11,6 +11,11 @@
   "devDependencies": {
     "jest": "^29.7.0"
   },
+  "jest": {
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["text", "lcov", "json", "html"]
+},
   "dependencies": {
     "ansi-styles": "^4.3.0",
     "ansi-regex": "^5.0.1",
